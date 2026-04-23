@@ -1280,20 +1280,27 @@
     <div class="ingressos-grid">
       <div class="ingresso-card">
         <div class="ingresso-header">
-          <p class="ingresso-tier">Ingresso · Lançamento</p>
+          <div style="display:flex; align-items:center; gap:10px; margin-bottom:8px;">
+            <span style="background:var(--accent); color:#080808; font-size:11px; font-weight:700; letter-spacing:2px; text-transform:uppercase; padding:4px 12px; border-radius:2px;">LOTE 01 · ATIVO</span>
+          </div>
+          <p class="ingresso-tier">Ingresso Standard</p>
           <div class="ingresso-name">STANDARD</div>
           <p class="ingresso-desc">Acesso completo aos dois dias do evento. Ideal para quem quer aprender e fazer conexões.</p>
         </div>
         <div class="ingresso-price">
-          <p class="price-note">A partir de</p>
-          <p class="price-tbd">[VALOR A DEFINIR]</p>
-          <p class="price-installment">Parcelamento disponível</p>
+          <p class="price-note" style="color:var(--accent); font-weight:700; font-size:13px; letter-spacing:1px;">⚡ LOTE 01 — MENOR PREÇO · VAGAS LIMITADAS</p>
+          <div style="display:flex; align-items:baseline; gap:4px;">
+            <span style="font-family:'Bebas Neue',sans-serif; font-size:22px; color:var(--text-muted);">R$</span>
+            <span style="font-family:'Bebas Neue',sans-serif; font-size:60px; line-height:1; color:var(--text);">349</span>
+            <span style="font-size:14px; color:var(--text-muted);">,00</span>
+          </div>
+          <p class="price-installment" style="color:var(--text-muted);">Após esgotar → Lote 2: <strong>R$399</strong> · Lote 3: <strong>R$499</strong></p>
         </div>
         <div class="ingresso-features">
           <div class="feature-item"><span class="feature-check">✓</span> Acesso a todas as palestras</div>
           <div class="feature-item"><span class="feature-check">✓</span> Credencial + kit do evento</div>
           <div class="feature-item"><span class="feature-check">✓</span> Espaço de networking</div>
-          <div class="feature-item"><span class="feature-check">✓</span> Certificado de participação</div>
+          <div class="feature-item"><span class="feature-check">✓</span> <strong style="color:var(--accent)">UPlay TV 30 dias grátis</strong></div>
         </div>
         <div class="ingresso-cta"><a href="https://sun.eduzz.com/69K1VRG7WO" target="_blank" class="btn-ingresso ghost-btn">GARANTIR INGRESSO STANDARD</a></div>
       </div>
@@ -1305,20 +1312,32 @@
           <p class="ingresso-desc">Experiência premium com estrutura exclusiva para aproveitar melhor o evento e o networking.</p>
         </div>
         <div class="ingresso-price">
-          <p class="price-note">A partir de</p>
-          <p class="price-tbd">[VALOR A DEFINIR]</p>
+          <p class="price-note">Mesas · Vagas Limitadas</p>
+          <div style="display:flex; align-items:baseline; gap:4px;">
+            <span style="font-family:'Bebas Neue',sans-serif; font-size:22px; color:var(--text-muted);">R$</span>
+            <span style="font-family:'Bebas Neue',sans-serif; font-size:60px; line-height:1; color:var(--accent);">700</span>
+            <span style="font-size:14px; color:var(--text-muted);">,00</span>
+          </div>
           <p class="price-installment">Parcelamento disponível</p>
         </div>
         <div class="ingresso-features">
           <div class="feature-item"><span class="feature-check">✓</span> <strong>Tudo do ingresso Standard</strong></div>
-          <div class="feature-item"><span class="feature-plus">+</span> Área VIP exclusiva no evento</div>
-          <div class="feature-item"><span class="feature-plus">+</span> Almoço incluso (2 dias)</div>
-          <div class="feature-item"><span class="feature-plus">+</span> Acesso a palestrantes</div>
-          <div class="feature-item"><span class="feature-plus">+</span> Happy hour exclusivo</div>
+          <div class="feature-item"><span class="feature-plus">+</span> Mesa VIP exclusiva</div>
+          <div class="feature-item"><span class="feature-plus">+</span> 2 coffees inclusos</div>
+          <div class="feature-item"><span class="feature-plus">+</span> Almoço no sábado no Hotel Kindermann</div>
+          <div class="feature-item"><span class="feature-plus">+</span> Acesso aos palestrantes</div>
+          <div class="feature-item"><span class="feature-check">✓</span> <strong style="color:var(--accent)">UPlay TV 30 dias grátis</strong></div>
         </div>
         <div class="ingresso-cta"><a href="https://sun.eduzz.com/69K1VRG7WO" target="_blank" class="btn-ingresso">GARANTIR INGRESSO VIP</a></div>
       </div>
 
+    </div>
+    <div style="margin-top:32px; padding:24px 32px; background:var(--surface); border:1px solid rgba(245,168,0,0.3); border-radius:4px; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:16px;">
+      <div>
+        <p style="font-family:'Bebas Neue',sans-serif; font-size:22px; letter-spacing:1px; color:var(--text);">GRUPO DE 5 PESSOAS OU MAIS?</p>
+        <p style="font-size:14px; color:var(--text-muted); margin-top:4px;">Entre em contato pelo WhatsApp e negocie condições especiais para o seu grupo.</p>
+      </div>
+      <a href="https://wa.me/55" target="_blank" style="background:var(--accent); color:#080808; font-family:'DM Sans',sans-serif; font-size:13px; font-weight:700; letter-spacing:1.5px; text-transform:uppercase; padding:14px 28px; border-radius:2px; text-decoration:none; white-space:nowrap;">CHAMAR NO WHATSAPP</a>
     </div>
   </div>
 </section>
@@ -1334,9 +1353,10 @@
       <div class="faq-item"><button class="faq-question" onclick="toggleFaq(this)">Onde e quando será o evento?<span class="faq-icon">+</span></button><div class="faq-answer"><div class="faq-answer-inner">O 2° Congresso Liveness Revolution será nos dias <strong>31 de Julho e 01 de Agosto de 2026</strong>, no <strong>Hotel Kindermann em Chapecó/SC</strong>.</div></div></div>
       <div class="faq-item"><button class="faq-question" onclick="toggleFaq(this)">Para quem é o evento?<span class="faq-icon">+</span></button><div class="faq-answer"><div class="faq-answer-inner">O evento é feito para profissionais de educação física, personal trainers, donos e gestores de academia que querem evoluir — técnica, estratégica e profissionalmente. Se você atua no setor fitness, este evento é para você.</div></div></div>
       <div class="faq-item"><button class="faq-question" onclick="toggleFaq(this)">Qual a diferença entre os tipos de ingresso?<span class="faq-icon">+</span></button><div class="faq-answer"><div class="faq-answer-inner"><strong>Standard:</strong> acesso completo a toda programação do evento, ideal para quem quer mergulhar no conteúdo.<br><br><strong>VIP:</strong> tudo do Standard + área exclusiva, almoço incluso, acesso a palestrantes e happy hour.</div></div></div>
-      <div class="faq-item"><button class="faq-question" onclick="toggleFaq(this)">O ingresso inclui alimentação?<span class="faq-icon">+</span></button><div class="faq-answer"><div class="faq-answer-inner">Os ingressos VIP e Premium incluem almoço nos dois dias do evento. O ingresso Standard não inclui alimentação — haverá opções disponíveis no hotel.</div></div></div>
+      <div class="faq-item"><button class="faq-question" onclick="toggleFaq(this)">O ingresso inclui alimentação?<span class="faq-icon">+</span></button><div class="faq-answer"><div class="faq-answer-inner">O ingresso VIP inclui 2 coffees e almoço no sábado (dia 1) no Hotel Kindermann. O ingresso Standard não inclui alimentação — haverá opções disponíveis no local.</div></div></div>
       
-    </div>
+    <div class="faq-item"><button class="faq-question" onclick="toggleFaq(this)">Não sou de academia — sou fisioterapeuta, nutricionista ou atuo em outra área da saúde. Posso participar?<span class="faq-icon">+</span></button><div class="faq-answer"><div class="faq-answer-inner">Com certeza! O 2° Congresso Liveness Revolution é aberto a todos os profissionais que atuam na área da saúde, movimento e bem-estar. Fisioterapeutas, nutricionistas, médicos do esporte, biomédicos e qualquer profissional que trabalhe direta ou indiretamente com corpo humano, desempenho e qualidade de vida vai encontrar conteúdo relevante e conexões valiosas aqui. O evento foi pensado para quem quer evoluir na carreira — independente do título na carteira.</div></div></div>
+      </div>
   </div>
 </section>
 
