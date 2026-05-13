@@ -1353,7 +1353,7 @@ src="https://www.facebook.com/tr?id=25325898953775108&ev=PageView&noscript=1"
             <p style="font-size:12px; color:var(--text-dim); padding-left:24px; line-height:1.5;">Plataforma de conteúdo fitness com treinos, nutrição e lifestyle — acesso completo por 30 dias sem pagar nada.</p>
           </div>
         </div>
-        <div class="ingresso-cta"><a href="https://chk.eduzz.com/G96RE86EW1" target="_blank" class="btn-ingresso" onclick="fbq('track', 'InitiateCheckout', {content_name: 'Ingresso Normal', value: 349, currency: 'BRL'});">GARANTIR INGRESSO NORMAL</a></div>
+        <div class="ingresso-cta"><a href="https://chk.eduzz.com/G96RE86EW1" target="_blank" class="btn-ingresso" onclick="fbq('track', 'InitiateCheckout', {content_name: 'Ingresso Normal', value: 349, currency: 'BRL'}); gtag('event', 'click_checkout_normal', {value: 349, currency: 'BRL', ticket_type: 'Normal'});">GARANTIR INGRESSO NORMAL</a></div>
       </div>
       <div class="ingresso-card featured">
         <div class="featured-badge">MAIS POPULAR</div>
@@ -1382,7 +1382,7 @@ src="https://www.facebook.com/tr?id=25325898953775108&ev=PageView&noscript=1"
             <p style="font-size:12px; color:var(--text-dim); padding-left:24px; line-height:1.5;">Plataforma de conteúdo fitness com treinos, nutrição e lifestyle — acesso completo por 30 dias sem pagar nada.</p>
           </div>
         </div>
-        <div class="ingresso-cta"><a href="https://chk.eduzz.com/KW8Z7BAB01" target="_blank" class="btn-ingresso" onclick="fbq('track', 'InitiateCheckout', {content_name: 'Ingresso VIP', value: 799, currency: 'BRL'});">GARANTIR INGRESSO VIP</a></div>
+        <div class="ingresso-cta"><a href="https://chk.eduzz.com/KW8Z7BAB01" target="_blank" class="btn-ingresso" onclick="fbq('track', 'InitiateCheckout', {content_name: 'Ingresso VIP', value: 799, currency: 'BRL'}); gtag('event', 'click_checkout_vip', {value: 799, currency: 'BRL', ticket_type: 'VIP'});">GARANTIR INGRESSO VIP</a></div>
       </div>
 
     </div>
@@ -1391,7 +1391,7 @@ src="https://www.facebook.com/tr?id=25325898953775108&ev=PageView&noscript=1"
         <p style="font-family:'Bebas Neue',sans-serif; font-size:22px; letter-spacing:1px; color:var(--text);">GRUPO DE 5 PESSOAS OU MAIS?</p>
         <p style="font-size:14px; color:var(--text-muted); margin-top:4px;">Entre em contato pelo WhatsApp e negocie condições especiais para o seu grupo.</p>
       </div>
-      <a href="https://wa.me/5549991786178" target="_blank" style="background:var(--accent); color:#080808; font-family:'DM Sans',sans-serif; font-size:13px; font-weight:700; letter-spacing:1.5px; text-transform:uppercase; padding:14px 28px; border-radius:2px; text-decoration:none; white-space:nowrap;">CHAMAR NO WHATSAPP</a>
+      <a href="https://wa.me/5549991786178" onclick="gtag('event', 'click_whatsapp_grupo', {channel: 'whatsapp', source: 'grupo'});" target="_blank" style="background:var(--accent); color:#080808; font-family:'DM Sans',sans-serif; font-size:13px; font-weight:700; letter-spacing:1.5px; text-transform:uppercase; padding:14px 28px; border-radius:2px; text-decoration:none; white-space:nowrap;">CHAMAR NO WHATSAPP</a>
     </div>
   </div>
 </section>
