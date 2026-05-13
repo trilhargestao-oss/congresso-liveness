@@ -987,6 +987,23 @@
     .sp-card { flex: 0 0 80%; }
   }
 </style>
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1509435364093700');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1509435364093700&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
 </head>
 <body>
 
@@ -1328,7 +1345,7 @@
             <p style="font-size:12px; color:var(--text-dim); padding-left:24px; line-height:1.5;">Plataforma de conteúdo fitness com treinos, nutrição e lifestyle — acesso completo por 30 dias sem pagar nada.</p>
           </div>
         </div>
-        <div class="ingresso-cta"><a href="https://chk.eduzz.com/G96RE86EW1" target="_blank" class="btn-ingresso">GARANTIR INGRESSO NORMAL</a></div>
+        <div class="ingresso-cta"><a href="https://chk.eduzz.com/G96RE86EW1" target="_blank" class="btn-ingresso" onclick="fbq('track', 'InitiateCheckout', {content_name: 'Ingresso Normal', value: 349, currency: 'BRL'});">GARANTIR INGRESSO NORMAL</a></div>
       </div>
       <div class="ingresso-card featured">
         <div class="featured-badge">MAIS POPULAR</div>
@@ -1357,7 +1374,7 @@
             <p style="font-size:12px; color:var(--text-dim); padding-left:24px; line-height:1.5;">Plataforma de conteúdo fitness com treinos, nutrição e lifestyle — acesso completo por 30 dias sem pagar nada.</p>
           </div>
         </div>
-        <div class="ingresso-cta"><a href="https://chk.eduzz.com/KW8Z7BAB01" target="_blank" class="btn-ingresso">GARANTIR INGRESSO VIP</a></div>
+        <div class="ingresso-cta"><a href="https://chk.eduzz.com/KW8Z7BAB01" target="_blank" class="btn-ingresso" onclick="fbq('track', 'InitiateCheckout', {content_name: 'Ingresso VIP', value: 799, currency: 'BRL'});">GARANTIR INGRESSO VIP</a></div>
       </div>
 
     </div>
