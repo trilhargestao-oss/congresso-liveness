@@ -484,16 +484,50 @@
   }
   .day-header {
     background: var(--accent);
-    padding: 18px 28px;
+    padding: 16px 28px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 12px;
+  }
+  .day-label-group {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+  .day-tag {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 13px;
+    letter-spacing: 2px;
+    color: rgba(0,0,0,0.5);
+    text-transform: uppercase;
   }
   .day-label {
     font-family: 'Bebas Neue', sans-serif;
-    font-size: 26px;
+    font-size: 28px;
     letter-spacing: 1px;
     color: #080808;
+    line-height: 1;
+  }
+  .day-date-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 2px;
+  }
+  .day-actual-date {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: #080808;
+    line-height: 1;
+  }
+  .day-time {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: rgba(0,0,0,0.55);
   }
   .day-date {
     font-size: 12px;
@@ -1355,7 +1389,15 @@ src="https://www.facebook.com/tr?id=25325898953775108&ev=PageView&noscript=1"
     </div>
     <div class="prog-days">
       <div class="day-card">
-        <div class="day-header"><span class="day-label">DIA 01 · SEXTA</span><span class="day-date">31/07 · 13h00 às 20h30</span></div>
+        <div class="day-header">
+          <div class="day-label-group">
+            <span class="day-label">SEXTA-FEIRA</span>
+          </div>
+          <div class="day-date-group">
+            <span class="day-actual-date">31 DE JULHO</span>
+            <span class="day-time">13h00 às 20h30</span>
+          </div>
+        </div>
         <div>
           <div class="slot"><span class="slot-time" style="min-width:auto; color:var(--accent);">●</span><div class="slot-info"><h4>Abertura Oficial</h4><p>Recepção e cerimônia de abertura do evento</p></div></div>
           <div class="slot"><span class="slot-time" style="min-width:auto; color:var(--accent);">●</span><div class="slot-info"><h4 style="color:var(--accent);">Rodrigo Fenner</h4><p style="font-style:italic; margin-top:4px;">"Biomecânica na Prática: Como Avaliar, Corrigir Postura e Evoluir o Treinamento"</p></div></div>
@@ -1365,7 +1407,15 @@ src="https://www.facebook.com/tr?id=25325898953775108&ev=PageView&noscript=1"
         </div>
       </div>
       <div class="day-card">
-        <div class="day-header"><span class="day-label">DIA 02 · SÁBADO</span><span class="day-date">01/08 · 08h00 às 20h30</span></div>
+        <div class="day-header">
+          <div class="day-label-group">
+            <span class="day-label">SÁBADO</span>
+          </div>
+          <div class="day-date-group">
+            <span class="day-actual-date">01 DE AGOSTO</span>
+            <span class="day-time">08h00 às 20h30</span>
+          </div>
+        </div>
         <div>
           <div class="slot"><span class="slot-time" style="min-width:auto; color:var(--accent);">●</span><div class="slot-info"><h4 style="color:var(--accent);">Michael Alexandre</h4><p style="font-style:italic; margin-top:4px;">"Canetas Emagrecedoras: O Impacto Real no Corpo, Treino e Resultados"</p></div></div>
           <div class="slot"><span class="slot-time" style="min-width:auto; color:var(--accent);">●</span><div class="slot-info"><h4 style="color:var(--accent);">Carla Dalan</h4><p style="font-style:italic; margin-top:4px;">"Destrave sua Mente para o Sucesso"</p></div></div>
