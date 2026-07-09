@@ -545,13 +545,26 @@
   }
   .slot:last-child { border-bottom: none; }
   .slot-time {
-    font-size: 12px;
-    font-weight: 600;
+    font-size: 11px;
+    font-weight: 700;
     color: var(--text-dim);
     letter-spacing: 0.5px;
-    white-space: nowrap;
+    text-align: center;
+    line-height: 1.5;
     margin-top: 2px;
     min-width: 55px;
+    flex-shrink: 0;
+  }
+  .slot-break {
+    background: rgba(255,255,255,0.03);
+    border-radius: 4px;
+    margin: 4px 0;
+  }
+  .slot-break h4 {
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
   }
   .slot-info h4 { font-size: 14px; font-weight: 600; color: var(--text); margin-bottom: 2px; }
   .slot-info p { font-size: 13px; color: var(--text-muted); }
@@ -1248,7 +1261,7 @@ src="https://www.facebook.com/tr?id=25325898953775108&ev=PageView&noscript=1"
   <div class="marquee-track">
     <span class="marquee-item"><span class="num">270</span> PARTICIPANTES NA 1ª EDIÇÃO</span>
     <span class="marquee-dot"></span>
-    <span class="marquee-item"><span class="num">11</span> PALESTRANTES CONFIRMADOS</span>
+    <span class="marquee-item"><span class="num">13</span> PALESTRANTES CONFIRMADOS</span>
     <span class="marquee-dot"></span>
     <span class="marquee-item"><span class="num">2</span> DIAS DE IMERSÃO</span>
     <span class="marquee-dot"></span>
@@ -1260,7 +1273,7 @@ src="https://www.facebook.com/tr?id=25325898953775108&ev=PageView&noscript=1"
     <span class="marquee-dot"></span>
     <span class="marquee-item"><span class="num">270</span> PARTICIPANTES NA 1ª EDIÇÃO</span>
     <span class="marquee-dot"></span>
-    <span class="marquee-item"><span class="num">11</span> PALESTRANTES CONFIRMADOS</span>
+    <span class="marquee-item"><span class="num">13</span> PALESTRANTES CONFIRMADOS</span>
     <span class="marquee-dot"></span>
     <span class="marquee-item"><span class="num">2</span> DIAS DE IMERSÃO</span>
     <span class="marquee-dot"></span>
@@ -1298,7 +1311,7 @@ src="https://www.facebook.com/tr?id=25325898953775108&ev=PageView&noscript=1"
     <span class="tag">Palestrantes</span>
     <h2 class="section-title">APRENDA COM QUEM FAZ NA PRÁTICA</h2>
     <div class="divider"></div>
-    <p style="color:var(--text-muted); max-width:560px; margin-top:8px; font-size:15px; margin-bottom:48px;">11 especialistas confirmados. Conteúdo direto, prático e aplicável.</p>
+    <p style="color:var(--text-muted); max-width:560px; margin-top:8px; font-size:15px; margin-bottom:48px;">13 especialistas confirmados. Conteúdo direto, prático e aplicável.</p>
     <div style="position:relative;">
       <div class="sp-track-wrap" id="spTrack">
         <div class="sp-track" id="spInner">
@@ -1452,7 +1465,7 @@ src="https://www.facebook.com/tr?id=25325898953775108&ev=PageView&noscript=1"
 <div class="proof-numbers" id="numeros">
   <div class="container">
     <div class="proof-grid">
-      <div class="proof-item"><span class="proof-num">11</span><span class="proof-label">Palestrantes confirmados</span></div>
+      <div class="proof-item"><span class="proof-num">13</span><span class="proof-label">Palestrantes confirmados</span></div>
       <div class="proof-item"><span class="proof-num">2</span><span class="proof-label">Dias de imersão total</span></div>
       <div class="proof-item"><span class="proof-num">16H</span><span class="proof-label">Horas de conteúdo</span></div>
     </div>
@@ -1481,11 +1494,47 @@ src="https://www.facebook.com/tr?id=25325898953775108&ev=PageView&noscript=1"
           </div>
         </div>
         <div>
-          <div class="slot"><span class="slot-time" style="min-width:auto; color:var(--accent);">●</span><div class="slot-info"><h4>Abertura Oficial</h4><p>Recepção e cerimônia de abertura do evento</p></div></div>
-          <div class="slot"><span class="slot-time" style="min-width:auto; color:var(--accent);">●</span><div class="slot-info"><h4 style="color:var(--accent);">Rodrigo Fenner</h4><p style="font-style:italic; margin-top:4px;">"Biomecânica na Prática: Como Avaliar, Corrigir Postura e Evoluir o Treinamento"</p></div></div>
-          <div class="slot"><span class="slot-time" style="min-width:auto; color:var(--accent);">●</span><div class="slot-info"><h4 style="color:var(--accent);">Rafael Sonsin</h4><p style="font-style:italic; margin-top:4px;">"Treinamento Avançado: Ajustes Inteligentes para Maximizar Hipertrofia e Resultados"</p></div></div>
-          <div class="slot"><span class="slot-time" style="min-width:auto; color:var(--accent);">●</span><div class="slot-info"><h4 style="color:var(--accent);">Brenda Lago</h4><p style="font-style:italic; margin-top:4px;">"Muito Além do Treino: Como Construir um Time Forte na sua Academia e Studio"</p></div></div>
-          <div class="slot"><span class="slot-time" style="min-width:auto; color:var(--accent);">●</span><div class="slot-info"><h4 style="color:var(--accent);">Alex Souto Maior</h4><p style="font-style:italic; margin-top:4px;">"Do Fitness à Alta Performance: Ciência, Força e o Treino de Verdade"</p></div></div>
+                    <div class="slot">
+            <span class="slot-time">13:00</span>
+            <div class="slot-info">
+              <h4 style="color:var(--text);">Abertura Oficial</h4>
+            </div>
+          </div>
+          <div class="slot">
+            <span class="slot-time">13:30<br>às<br>14:50</span>
+            <div class="slot-info">
+              <h4 style="color:var(--accent);">Rodrigo Fenner</h4>
+              <p style="font-style:italic; margin-top:4px;">"Biomecânica na Prática: Como Avaliar, Corrigir Postura e Evoluir o Treinamento"</p>
+            </div>
+          </div>
+          <div class="slot">
+            <span class="slot-time">14:50<br>às<br>16:15</span>
+            <div class="slot-info">
+              <h4 style="color:var(--accent);">Rafael Sonsin</h4>
+              <p style="font-style:italic; margin-top:4px;">"Treinamento Avançado: Ajustes Inteligentes para Maximizar Hipertrofia e Resultados"</p>
+            </div>
+          </div>
+          <div class="slot">
+            <span class="slot-time">16:15<br>às<br>17:15</span>
+            <div class="slot-info">
+              <h4 style="color:var(--accent);">Sandra Caron</h4>
+              <p style="font-style:italic; margin-top:4px;">"Vende Mais quem se posiciona melhor — o jogo invisível da percepção, autoridade e desejo"</p>
+            </div>
+          </div>
+          <div class="slot slot-break">
+            <span class="slot-time" style="color:var(--text-dim);">17:15<br>às<br>17:45</span>
+            <div class="slot-info" style="display:flex; align-items:center; gap:10px;">
+              <span style="font-size:16px;">☕</span>
+              <h4 style="color:var(--text-muted); font-size:13px; letter-spacing:1px;">INTERVALO</h4>
+            </div>
+          </div>
+          <div class="slot">
+            <span class="slot-time">17:45<br>às<br>20:30</span>
+            <div class="slot-info">
+              <h4 style="color:var(--accent);">Alex Souto Maior</h4>
+              <p style="font-style:italic; margin-top:4px;">"Do Fitness à Alta Performance: Ciência, Força e o Treino de Verdade"</p>
+            </div>
+          </div>
         </div>
       </div>
       <div class="day-card">
@@ -1499,12 +1548,75 @@ src="https://www.facebook.com/tr?id=25325898953775108&ev=PageView&noscript=1"
           </div>
         </div>
         <div>
-          <div class="slot"><span class="slot-time" style="min-width:auto; color:var(--accent);">●</span><div class="slot-info"><h4 style="color:var(--accent);">Michael Alexandre</h4><p style="font-style:italic; margin-top:4px;">"Canetas Emagrecedoras: O Impacto Real no Corpo, Treino e Resultados"</p></div></div>
-          <div class="slot"><span class="slot-time" style="min-width:auto; color:var(--accent);">●</span><div class="slot-info"><h4 style="color:var(--accent);">Carla Dalan</h4><p style="font-style:italic; margin-top:4px;">"Destrave sua Mente para o Sucesso"</p></div></div>
-          
-          <div class="slot"><span class="slot-time" style="min-width:auto; color:var(--accent);">●</span><div class="slot-info"><h4 style="color:var(--accent);">Márcio Bacci</h4><p style="font-style:italic; margin-top:4px;">"Peptídeos: Revolução na Performance ou Apenas Mais um Hype?"</p></div></div>
-          <div class="slot"><span class="slot-time" style="min-width:auto; color:var(--accent);">●</span><div class="slot-info"><h4 style="color:var(--accent);">Régis &amp; Fernanda</h4><p style="font-style:italic; margin-top:4px;">"Físico Feminino de Alto Nível: Como Construir Glúteos, Coxas e um Corpo Estético de Verdade"</p></div></div>
-          <div class="slot"><span class="slot-time" style="min-width:auto; color:var(--accent);">●</span><div class="slot-info"><h4 style="color:var(--accent);">Angela Borges</h4><p style="font-style:italic; margin-top:4px;">"Linha de Cintura e Abdome: Como Esculpir, Afinar e Potencializar Resultados na Prática"</p></div></div>
+                    <div class="slot">
+            <span class="slot-time">08:00<br>às<br>09:30</span>
+            <div class="slot-info">
+              <h4 style="color:var(--accent);">Michael Alexandre</h4>
+              <p style="font-style:italic; margin-top:4px;">"Canetas Emagrecedoras (GILP-1): O Impacto Real no Corpo, Treino e Resultados"</p>
+            </div>
+          </div>
+          <div class="slot">
+            <span class="slot-time">09:30<br>às<br>10:15</span>
+            <div class="slot-info">
+              <h4 style="color:var(--accent);">Arlei Fedrizzi</h4>
+              <p style="font-style:italic; margin-top:4px;">Tendências fitness: o que o futuro nos espera</p>
+            </div>
+          </div>
+          <div class="slot">
+            <span class="slot-time">10:15<br>às<br>11:15</span>
+            <div class="slot-info">
+              <h4 style="color:var(--accent);">Carla Dalan</h4>
+              <p style="font-style:italic; margin-top:4px;">"Destrave sua Mente para o Sucesso"</p>
+            </div>
+          </div>
+          <div class="slot">
+            <span class="slot-time">11:15<br>às<br>11:45</span>
+            <div class="slot-info">
+              <h4 style="color:var(--text);">Sorteio</h4>
+            </div>
+          </div>
+          <div class="slot slot-break">
+            <span class="slot-time" style="color:var(--text-dim);">11:45<br>às<br>13:30</span>
+            <div class="slot-info" style="display:flex; align-items:center; gap:10px;">
+              <span style="font-size:16px;">🍽️</span>
+              <h4 style="color:var(--text-muted); font-size:13px; letter-spacing:1px;">ALMOÇO</h4>
+            </div>
+          </div>
+          <div class="slot">
+            <span class="slot-time">13:30<br>às<br>15:30</span>
+            <div class="slot-info">
+              <h4 style="color:var(--accent);">Márcio Bacci</h4>
+              <p style="font-style:italic; margin-top:4px;">"Peptídeos: Revolução na Performance ou Apenas Mais um Hype?"</p>
+            </div>
+          </div>
+          <div class="slot">
+            <span class="slot-time">15:45<br>às<br>16:45</span>
+            <div class="slot-info">
+              <h4 style="color:var(--accent);">Brenda Lago</h4>
+              <p style="font-style:italic; margin-top:4px;">"Muito Além do Treino: Como Construir um Time Forte em sua Academia e Studio"</p>
+            </div>
+          </div>
+          <div class="slot slot-break">
+            <span class="slot-time" style="color:var(--text-dim);">16:45<br>às<br>17:15</span>
+            <div class="slot-info" style="display:flex; align-items:center; gap:10px;">
+              <span style="font-size:16px;">⏱️</span>
+              <h4 style="color:var(--text-muted); font-size:13px; letter-spacing:1px;">INTERVALO</h4>
+            </div>
+          </div>
+          <div class="slot">
+            <span class="slot-time">17:15<br>às<br>18:45</span>
+            <div class="slot-info">
+              <h4 style="color:var(--accent);">Régis &amp; Fernanda</h4>
+              <p style="font-style:italic; margin-top:4px;">"Físico Feminino de Alto Nível: Como Construir Glúteos, Coxas e um Corpo Estético de Verdade"</p>
+            </div>
+          </div>
+          <div class="slot">
+            <span class="slot-time">18:45<br>às<br>20:30</span>
+            <div class="slot-info">
+              <h4 style="color:var(--accent);">Ângela Borges</h4>
+              <p style="font-style:italic; margin-top:4px;">"Linha de Cintura e Abdome: Como Esculpir, Afinar e Potencializar Resultados na Prática"</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
